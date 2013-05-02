@@ -130,7 +130,7 @@ else
      $HTTP_USER_AGENT = $_SERVER['HTTP_USER_AGENT'];
 
 
-    $mysqli = new mysqli('localhost','analytics','z23bE50m7H','analytics');
+    $mysqli = new mysqli('localhost','database','password','user');
     if (mysqli_connect_errno()){    exit();}
     
     $REQUEST_URI= $mysqli->real_escape_string($_SERVER['REQUEST_URI']);
